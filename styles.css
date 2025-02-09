@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --border-color: #ccc;
+    --button-bg: #28a745;
+    --button-hover: #218838;
+    --upload-bg: #f9f9f9;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: #444;
+    --button-bg: #ff9800;
+    --button-hover: #e68900;
+    --upload-bg: #1e1e1e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+.container {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+.upload-area {
+    border: 2px dashed var(--border-color);
+    padding: 20px;
+    cursor: pointer;
+    background: var(--upload-bg);
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+button {
+    background: var(--button-bg);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: var(--button-hover);
+}
+.loading {
+    display: none;
+    font-size: 16px;
+    color: #ff9800;
+    margin-top: 10px;
+}
+#themeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-color);
+}
