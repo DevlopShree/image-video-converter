@@ -51,7 +51,7 @@ function convertImage(file, format) {
             const ctx = canvas.getContext("2d");
             ctx.drawImage(img, 0, 0);
             
-            const convertedUrl = canvas.toDataURL(`image/${format}`);
+            const convertedUrl = canvas.toDataURL(`image/${format}`, 0.8);
             createDownloadLink(convertedUrl, file.name, format);
         };
         img.src = event.target.result;
